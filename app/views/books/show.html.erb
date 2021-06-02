@@ -32,7 +32,7 @@
               <% end %>
             </p>
            <% end %>
-          </td>f
+          </td>
           <td>
             <p><%= "コメント数: #{@book.book_comments.count}" %></p>
           </td>
@@ -50,7 +50,7 @@
       </table>
       
       <table class='table'>
-        <% @book_comments.each do |book_comment| %>
+        <% @book.book_comments.each do |book_comment| %>
         <tr>
           <td>
             <%= link_to user_path(book_comment.user) do %>
